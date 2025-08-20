@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <marquee>
+        <img src="image/111.jpg" alt="">
+    </marquee>
+    <h1>Bai 3</h1>
+    <!-- Danh sach (list)
+    co thu tu ol,li -->
+    <p>Danh sach cong viec lam buoi sang</p>
+    <ol>
+        <li>Thuc Day</li>
+        <li>An Sang</li>
+        <li>Di Hoc</li>
+        <li>Giai Lao</li>
+    </ol>
+    <!-- khong co thu tu ul,li -->
+     <p>Cac ngon ngu lap trinh</p>
+     <ul>
+        <li>web</li>
+        <li>Java</li>
+        <li>PHP</li>
+        <li>Python</li>
+     </ul>
+     <h1>Form</h1>
+     <form action="">
+        <div>
+            <b>Ho Va Ten:</b>
+            <input type="text" name="hoten" placeholder="Nhap ten vao day">
+        </div>
+        <br>
+        <div>
+            <b>Năm:</b>
+            <input type="text" name="nam" value="2025" readonly>
+        </div>
+        <!-- readonly không thể nhập -->
+        <br>
+        <div>
+            <b>Giới thiệu chi tiết về bản thân:</b>
+            <textarea name="gioi thieu">Nhap gioi thieu</textarea>
+        </div>
+        <br>
+         <div>
+            <b>Email:</b>
+            <input type="email" name="email" placeholder="Dạng @gmail.com">
+        </div>
+        <br>
+        <div>
+            <!-- so dau tien la 0
+            so thu 2 la 0-3-9
+            tam so cuoi tu 0-9 -->
+            <b>Số điện thoại:</b>
+            <input name="sodienthoai" type="tel" placeholder="Dạng số:09XXXXXXXX" required pattern="([0]{1}([0,3,9]{1})([0-9]{8}))">
+        </div>
+        <br>
+        <div>
+            <b>Gioi Tinh</b> <br>
+            <input type="radio" name="gioitinh" value="nam">Nam <br>
+            <input type="radio" name="gioitinh" value="nu">Nu <br>
+            <input type="radio" name="gioitinh" value="khongxacdinh">Khong Xac Dinh <br>
+
+        </div>
+        <br>
+        <div>
+            <b>So Thich</b> <br>
+            Game:<input type="checkbox" name="sothich" value="game"> <br>
+            Music:<input type="checkbox" name="sothich" value="music"> <br>
+            Sport:<input type="checkbox" name="sothich" value="sport"> <br>
+        </div>
+        <br>
+        <div>
+            <b>Trinh duyet ua thich</b> <br>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet">
+                <option value="Chrome">
+                <option value="Opera">
+            </datalist>
+            <br>
+             <select id="browsers">
+                <option value="Internet">Internet</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Opera">Opera</option>
+             </select>
+        </div>
+        <br>
+        <div>
+            0<input type="range" value="20">100
+        </div> <br>
+        <div>
+            <b>Tuoi</b> <br>
+            <input type="number" name="tuoi">
+        </div> <br>
+        <div>
+            <b>Ngay Thang Nam Sinh</b> <br>
+            <input type="date" value="ngaythangnamsinh">
+        </div>
+        <br>
+        <div>
+            <input type="color" name="" id="">
+        </div> <br>
+         <div>
+            <b>Chon anh dai dien</b> <br>
+            <input type="file">
+        </div> <br>
+         <div>
+            <b>reset</b> <br>
+            <input type="reset">
+        </div>
+        <div>
+            <input type="submit">
+            <!-- <input type="button" value="Xac Nhan"> -->
+        </div>
+        
+
+     </form>
+
+     <iframe width="600px" height="350px" src="https://www.youtube.com/embed/cOKTygdVMhM?si=lnUhpF86-hwMJohj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-originallowfullscreen-when-cross-origin" frameborder="0"></iframe>
+
+     <div>
+        <video controls width="560" height="315">
+        <source src="video/video1.mp4" type="video/mp4">
+    </video>
+
+    <audio controls>
+        <source src="video/ANHVUI-PhamKy-11836366.mp3" type="audio/mp3">
+    </audio>
+     </div>
+</body>
+</html>
