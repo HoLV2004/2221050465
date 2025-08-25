@@ -1,0 +1,28 @@
+h3{
+    color: violet;
+}
+#title{
+    background-color: rgb(144, 243, 124);
+}
+.bg{
+    background-color: rgb(212, 173, 248);
+}
+p{
+    color: red;
+    background-color: aliceblue;
+}
+.box1{
+    background-color: aqua;
+}
+.box2{
+    background-color: aquamarine;
+    /* gia tri1 laf tren duoi,gia tri2 la trai phai */
+    /* margin:50px 20px 100px 10px; */
+    /* cac gia tri theo chieu kim dong ho */
+    width: 50%;
+    margin:50px auto;
+   /* margin: auto;  can khoi ra giua */
+}
+.box3{
+    background-color: blueviolet;
+}
