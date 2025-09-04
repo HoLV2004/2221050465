@@ -6,7 +6,7 @@ ul{
 }
 .danhmuc{
     background-color: #2fa4e7;
-    padding: 20px;
+    padding: 15px;
 }
 .danhmuc-danhsach{
     display: flex;
@@ -26,7 +26,26 @@ ul{
 }
 .logo{
     height: 80px;
-    background-color: black;
+    background-color: #c5e6f8;
+}
+.logo-humg{
+    display: flex;
+    background-color: white;
+    width: 25%;
+}
+.logo img {
+    margin-top: 5px;
+    width: 60px;    
+    height: 70px;
+}
+.logo-word{
+    padding: 15px;
+}
+.logo-name{
+    color: #194e92;
+}
+.logo-name1{
+    color: gray;
 }
 main{
     display: flex;
@@ -44,7 +63,7 @@ main{
 }
 .tieude{
     background-color: rgb(79, 176, 224);
-    padding: 20px;
+    padding: 10px;
     color: white;
     font-size: x-large;
     font-weight: bold;
@@ -58,8 +77,23 @@ main{
     height: 200px;
     width: 32%;
     background-color: bisque;
+    position: relative;
+    display: inline-block;
 }
 img{
      height: 200px;
     width: 100%;
+}
+.chutren {
+    position: absolute;
+    background-color: rgba(207, 232, 246, 0.7);
+    width: 98%;
+    text-align: right;
+}
+.chuduoi {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(207, 232, 246, 0.7);
+    width: 98%;
+    height: 30px;
 }
