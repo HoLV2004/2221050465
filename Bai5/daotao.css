@@ -51,14 +51,14 @@ main{
     display: flex;
 }
 .noidung-trai{
-    /* height: 1000px;
-    background-color: aqua; */
+    /* height: 1000px; */
+    background-color: rgb(225, 234, 234);
     width: 80%;
     border-radius: 10px 10px 0px 0px;
 }
 .noidung-phai{
     height: 1000px;
-    background-color: rgb(103, 112, 112);
+    background-color: rgb(221, 240, 240);
     width: 20%;
 }
 .tieude{
@@ -68,6 +68,7 @@ main{
     font-size: x-large;
     font-weight: bold;
     border-radius: 10px 10px 0px 0px;
+    margin-top: 10px;
 }
 .tintuc-danhsach{
     display: flex;
@@ -81,19 +82,98 @@ main{
     display: inline-block;
 }
 img{
-     height: 200px;
+    height: 200px;
     width: 100%;
 }
 .chutren {
     position: absolute;
     background-color: rgba(207, 232, 246, 0.7);
-    width: 98%;
+    width: 100%;
     text-align: right;
 }
 .chuduoi {
     position: absolute;
     bottom: 0;
     background-color: rgba(207, 232, 246, 0.7);
-    width: 98%;
+    width: 100%;
     height: 30px;
+}
+.tin-thongbao {
+    display: flex;
+    margin: 10px;
+}
+.thongbao-left {
+    width: 30%;
+    height: 200px;
+    margin-right: 5%;
+}
+.thongbao-right {
+    width: 65%;
+    height: 200px;
+    display: flex;
+}
+.thongbao-left img {
+    width: 90%;
+    height: 130px;
+   margin-left: 15px;
+}
+.thongbao-left i {
+    justify-content: flex-end;
+    display: flex;
+}
+.chutrai{
+    width: 80%;
+}
+.chuphai{
+    width: 20%;
+}
+.huongdan1{
+    display: flex;
+
+}
+.right-content{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.login{
+    color: white;
+    background-color: #37a7e8;
+    font-size: 18px;
+    padding: 16px;
+    border-radius: 5px 5px 0 0;
+}
+.form{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.form-row{
+    padding: 6px 0;
+    display: flex;
+}
+
+.form-forget{
+    color: #37a7e8;
+    display: flex;
+    justify-content: flex-end;
+}
+.form-login{
+    margin: 4px 0;
+    background-color: #37a7e8;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 5px;
+}
+.form-micro{
+    background-color: #0078d4;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 5px;
+    margin-bottom: 4px;
 }
