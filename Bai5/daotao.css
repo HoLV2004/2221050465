@@ -133,7 +133,6 @@ img{
 }
 .right-content{
     background-color: white;
-    border: 1px solid black;
     border-radius: 5px;
     margin-left: 10px;
     margin-top: 10px;
@@ -176,4 +175,37 @@ img{
     padding: 4px;
     border-radius: 5px;
     margin-bottom: 4px;
+}
+.setup {
+    margin-top: 35px;
+}
+.setup-mobile {
+    border-radius: 10px 10px 0 0;
+    background-color: #37a7e8;
+    color: white;
+    font-size: 20px;
+    padding: 10px 10px 10px 30px;
+}
+.setup-app {
+    margin: 20px 20px;
+}
+.setup-apps {
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    padding: 4px 30px;
+    border-radius: 8px;
+    margin: 20px;
+}
+.setup-qr {
+    margin: 20px auto;
+    width: 150px;
+}
+.setup-qr img{
+    width: 100%;
+    height: 150px;
+}
+.form-login a{
+    text-decoration: none;
+    color: white;
 }

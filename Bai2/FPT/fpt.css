@@ -1,0 +1,55 @@
+body{
+margin: 0;
+}
+.header-container{
+    display: flex;
+    background-color: black;
+    width: 70%;
+    justify-content: space-between;
+    margin: auto;
+}
+ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 20px;
+}
+a{
+    font-weight: 500;
+    color: #9b9b9b;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: "SFProDisplay", Arial, sans-serif;
+
+}
+a:hover{
+    color: orange;
+}
+.logo{
+    width: 15%;
+}
+.danhmuc{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding:10px 0;
+}
+.chucnang{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.muagoi{
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    width: 50px;
+    border-radius: 10px;
+}
+.dangnhap{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100px;
+}
