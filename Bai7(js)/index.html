@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAI JAVASCRIP</title>
+    <script src="scrip.js"></script>
+</head>
+<body>
+    <script>
+        document.writeln("Hello World" + "<br>");
+        // để khai báo biến JS dùng let hoặc var
+        // cú pháp: let Tên biến = Giá trị;
+        // Để nối chuỗi JS dùng dấu +
+        let hoTen = "Le Van Ho" + "<br>";    
+        document.writeln(hoTen);
+
+        let soThuNhat = 10;
+        let soThuHai = 5;
+        let ketQua = true;
+        // cộng +
+        // trừ -
+        // nhân *
+        // chia /
+
+        // ketQua = soThuNhat + soThuHai;
+        // soThuNhat += soThuHai
+        // soThuNhat = soThuNhat + soThuHai
+        // soThuNhat %= soThuHai chia lấy phần dư
+
+        // document.writeln(ketQua);
+        // == != === !== ! > < >= <=
+        document.writeln(soThuNhat < soThuHai);
+
+        let thongTinSinhVien = {
+            hoTen: "Le Van Ho" ,
+            msv: "2221050465" ,
+            gioiTinh: true,
+            tuoi: 21,
+            lop: "CNPM",
+            diaChi: {
+                thanhPho: "Thanh Hoa",
+                phuong: "Le Loi",
+                duong: "ABC",
+                soNha: 123
+            }
+        }
+        let diaChiNhaHo = {
+            thanhPho: "Thanh Hoa",
+            phuong: "Le Loi",
+            duong: "ABC",
+            soNha: 123
+        }
+        thongTinSinhVien.diaChi = diaChiNhaHo;
+        document.writeln("Xin chao ban: " + thongTinSinhVien.hoTen + thongTinSinhVien.tuoi + "nha o:" + thongTinSinhVien.diaChi.phuong + " " +thongTinSinhVien.diaChi.thanhPho);
+
+        let namNay = 2025;
+        document.writeln("Ban " + thongTinSinhVien.hoTen + "Sinh nam" + (namNay - thongTinSinhVien.tuoi));
+
+
+    </script>
+</body>
+</html>

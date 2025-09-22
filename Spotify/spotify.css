@@ -1,0 +1,34 @@
+body{
+    background-color: gray;
+    color: white;
+}
+.container{
+    width: 40%;
+    height: 500px;
+    background-color: black;
+    margin: auto;
+}
+.noidung{
+    width: 70%;
+    background-color: green;
+    height: 400px;
+    margin: auto;
+}
+.form{
+    width: 100%;
+    background-color: aqua;
+    margin: auto;
+    text-align: center;
+}
+.khoi-nut{
+    margin-bottom: 15px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid white;
+    background-color: black;
+}
+
