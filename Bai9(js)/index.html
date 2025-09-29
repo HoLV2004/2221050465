@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //Mảng
+        // let arr =[1,2,3,4,5, 'a' ,'b','c'];
+        // document.writeln(arr.length);
+        // document.writeln(arr[3]);
+        // document.writeln(arr.indexOf('a'));
+        // document.writeln(Array.isArray(arr));
+
+        // var a,b,c,d;
+        // a = [1, 2, 3];
+        // b = "Javascrip"
+        // c = [42, "VBScrip"]
+        // d = a.concat(b, c);
+
+        //Them phan tu mang
+        // d = d.push("Kien");
+
+        // Đảo các phần tử trong mảng
+        // d = d.reverse();
+
+        //Xoa phan tu cuối trong mảng
+        // e = d.pop();
+
+        // xoa phan tu dau tien
+        // arr.shift();
+
+        // Them phan tu vao dau mang
+        // unshift();
+
+        // Thay phantu o so3 bang cai khac
+        // d[3] = 4;
+        // document.writeln(d);
+
+        // document.writeln(d);
+        // //Thay đổi mảng thành chuổi
+        // document.writeln(d.join("-"));
+
+
+        let toDay = new Date();
+        let now = toDay.getHours();
+        if (now < 10) {
+            document.writeln("Chào buổi sáng");
+        } else if (now >= 10 && now < 12) {
+            document.writeln("Chào buổi trua");
+        }
+        else if (now >= 12 && now < 17) {
+            document.writeln("Chào buổi chieu");
+        }
+        else if (now >= 17 && now < 22) {
+            document.writeln("Chào buổi toi");
+        }
+        else{
+            document.writeln("Chào buổi dem");
+        }
+
+        let so = 1000000000000000001;
+        let soCuoiCung = parseInt(so[so.length - 1]);
+        if (soCuoiCung % 2 ==0){
+            document.writeln("So chan");
+        }else{
+            document.writeln("So le");
+        }
+
+    </script>
+</body>
+</html>
