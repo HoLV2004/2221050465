@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bai 11</h1>
+    <h2>Tinh Diem</h2>
+    <div>
+        DiemA: <input type="number" id="diemA" placeholder="Nhap diem A">
+    </div>
+    <div>
+        DiemB: <input type="number" id="diemB" placeholder="Nhap diem B">
+    </div>
+    <div>
+        DiemC: <input type="number" id="diemC" placeholder="Nhap diem C">
+    </div>
+    <div>
+        <button onclick="xemKetQua()">Tinh Diem</button>
+    </div>
+    <div>
+        Ket Qua: <input type="text" id = "ketQua" placeholder="KetQua">
+    </div>
+
+    <!-- Tạo hàm JS tính điểm của sinh viên dựa vào 3 điểm A, B, C biết rằng diểm tổng = A*0.6 + B*0.3 + C*0.1 -->
+     <script>
+        
+        function xemKetQua(){
+            let diemA = parseFloat(document.getElementById('diemA').value);
+            let diemB = parseFloat(document.getElementById('diemB').value);
+            let diemC = parseFloat(document.getElementById('diemC').value);
+            tinhDiem(diemA, diemB, diemC);
+        }
+
+
+      function tinhDiem(a,b,c){
+       let tong;
+       if (kiemTraHopLe(a, b, c)){
+        tong = a*0.6 + b * 0.3 + c * 0.1;
+                        document.getElementById('ketQua').value = tong.toFixed(2); // Hiển thị kết quả
+
+       }
+       
+
+      }
+
+      function kiemTraHopLe(a, b, c){
+        let ketQua = true;
+         if(a < 0 || a > 10 || isNaN(a)){
+            document.writeln("Diem A khong hop le");
+            ketQua = false
+        }
+        if(b < 0 || b > 10 || isNaN(b)){
+            document.writeln("Diem B khong hop le");
+            ketQua = false
+        }
+        if(c < 0 || c > 10 || isNaN(c)){
+            document.writeln("Diem C khong hop le");
+            ketQua = false
+        }
+        return ketQua;
+
+      }
+    //   let a = 5;
+    //   let b = 8;
+    //   let c = 9;
+    //   tinhDiem (a,b,c);
+     </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.content{
+    text-align: center;
+}
+
+img{
+    width: 500px;
+}
+.nut{
+    text-align: center;
+}
+</style>
+<body>
+    <div class="content">
+        <h2>Vi du ve che do</h2>
+        <div class="anh">
+            <img src="./anh/mattroi.jpg" alt="">
+        </div>
+        <h2>Che do: Sang</h2>
+    </div>
+    <div class="nut">
+        <button onclick="doiCheDo()">Doi che do</button>
+    </div>
+
+
+    <script>
+        let cheDo = true;
+        function doiCheDo() {
+            if (cheDo == true){
+            document.getElementsByTagName('body')[0].style = 'background-color: black';
+            document.getElementsByTagName('h2')[1].innerHTML = 'Che do: Toi';
+            document.getElementsByTagName('h2')[0].style = 'color: white';
+            document.getElementsByTagName('h2')[1].style = 'color: white';
+            document.getElementsByTagName('img')[0].src = './anh/mattrang.webp';
+            cheDo = false;
+            }
+            else{
+            document.getElementsByTagName('body')[0].style = 'background-color: white';
+            document.getElementsByTagName('h2')[1].innerHTML = 'Che do: Sang';
+            document.getElementsByTagName('h2')[0].style = 'color: black';
+            document.getElementsByTagName('h2')[1].style = 'color: black';
+            document.getElementsByTagName('img')[0].src = './anh/mattroi.jpg';
+            cheDo = true;
+            }
+        }
+    </script>
+</body>
+</html>

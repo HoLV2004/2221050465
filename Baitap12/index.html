@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tinh chi so BMI</h1>
+    <div>
+        Chieu Cao:<input type="number" id="chieuCao" placeholder="Nhap vao chieu cao">
+    </div>
+    <div>
+        Can Nang: <input type="number" id="canNang" placeholder="Nhap vao can nang">
+    </div>
+    <div>
+        <button onclick="xemKetQua()">ketQua</button>
+    </div>
+    <div>
+        Ket Qua: <input type="text" id = "ketQua" placeholder="KetQua">
+    </div>
+
+
+    <script>
+        function xemKetQua(){
+            let canNang = parseFloat(document.getElementById('canNang').value);
+            let chieuCao = parseFloat(document.getElementById('chieuCao').value);
+            tinhBMI(chieuCao,canNang)
+        }
+
+        function tinhBMI(chieuCao,canNang){
+            let BMI;
+            if (kiemTraHopLe(canNang,chieuCao)){
+                BMI = canNang / (chieuCao*chieuCao);
+                document.getElementById('ketQua').value;
+            }
+        }
+
+        function kiemTraHopLe(chieuCao,canNang){
+        let ketQua = true;
+         if(canNang <= 0 || isNaN(canNang)){
+            document.writeln("Can nang khong hop le");
+            ketQua = false
+        }
+        if(chieuCao <= 0 || isNaN(chieuCao)){
+            document.writeln("Chieu cao khong hop le");
+            ketQua = false
+        }
+        return ketQua;
+    }
+    </script>
+
+
+</body>
+</html>
