@@ -1,55 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tính chỉ số BMI</title>
 </head>
 <body>
-    <h1>Tinh chi so BMI</h1>
+    <h2>Tính chỉ số BMI</h2>
     <div>
-        Chieu Cao:<input type="number" id="chieuCao" placeholder="Nhap vao chieu cao">
+        Cân nặng (kg): <input type="number" id="canNang" placeholder="Nhập cân nặng">
     </div>
     <div>
-        Can Nang: <input type="number" id="canNang" placeholder="Nhap vao can nang">
+        Chiều cao (m): <input type="number" id="chieuCao" placeholder="Nhập chiều cao">
     </div>
     <div>
-        <button onclick="xemKetQua()">ketQua</button>
+        <button onclick="xemBMI()">Tính BMI</button>
     </div>
     <div>
-        Ket Qua: <input type="text" id = "ketQua" placeholder="KetQua">
+        Kết quả: <input type="text" id="ketQua" placeholder="Kết quả BMI" readonly>
     </div>
-
+    <div>
+        <img id="anhBMI" src="" alt="">
+    </div>
 
     <script>
-        function xemKetQua(){
+        function xemBMI(){
             let canNang = parseFloat(document.getElementById('canNang').value);
             let chieuCao = parseFloat(document.getElementById('chieuCao').value);
-            tinhBMI(chieuCao,canNang)
+            tinhBMI(canNang, chieuCao);
         }
 
-        function tinhBMI(chieuCao,canNang){
-            let BMI;
-            if (kiemTraHopLe(canNang,chieuCao)){
-                BMI = canNang / (chieuCao*chieuCao);
-                document.getElementById('ketQua').value;
+        function tinhBMI(canNang, chieuCao){
+            if (kiemTraHopLe(canNang, chieuCao)){
+                let bmi = canNang / (chieuCao * chieuCao);
+                document.getElementById('ketQua').value = bmi.toFixed(2);
+                hienThiHinhAnh(bmi);
             }
         }
 
-        function kiemTraHopLe(chieuCao,canNang){
-        let ketQua = true;
-         if(canNang <= 0 || isNaN(canNang)){
-            document.writeln("Can nang khong hop le");
-            ketQua = false
+        function kiemTraHopLe(canNang, chieuCao){
+            if (isNaN(canNang) || canNang <= 0){
+                alert(" Cân nặng không hợp lệ!");
+                return false;
+            }
+            if (isNaN(chieuCao) || chieuCao <= 0){
+                alert(" Chiều cao không hợp lệ!");
+                return false;
+            }
+            return true;
         }
-        if(chieuCao <= 0 || isNaN(chieuCao)){
-            document.writeln("Chieu cao khong hop le");
-            ketQua = false
+
+        function hienThiHinhAnh(bmi){
+            let img = document.getElementById('anhBMI');
+            if (bmi < 18.5){
+                alert("Bạn đang gầy!");
+                img.src = "./anh/thieu.png";
+            } else if (bmi < 24.9){
+                alert("Cơ thể bình thường!");
+                img.src = "./anh/binhthuong.png";
+            } else if (bmi < 29.9){
+                alert("Bạn đang thừa cân!");
+                img.src = "./anh/thua.png";
+            } else if (bmi < 30.9){
+                alert("Bạn đang béo cấp độ 1!");
+                img.src = "./anh/beocapdo1.png";
+            }
+            else {
+                alert("Bạn bị béo nặng!");
+                img.src = "./anh/beonang.png";
+            }
         }
-        return ketQua;
-    }
     </script>
-
-
 </body>
 </html>

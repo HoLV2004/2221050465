@@ -33,7 +33,9 @@
     </div>
     <div class="container">
       <div>
-        <img class="banner" src="image/muado.jpg" alt="">
+        <img id="xemVideo" class="banner" src="image/muado.jpg" alt=""
+        onclick="viewTrailer('https://www.youtube.com/embed/AOuEB4NGFVw?si=NOwDlyL7WvWcCmwx')">
+        <iframe id="trailer" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:none;"></iframe>
         <img class="qc" src="image/qc.png" alt="">
       </div>
       <div class="theloai">
@@ -43,7 +45,8 @@
                 <div class="danhsach">
                     <div class="phim">
                         <div class="anh">
-                            <img src="image/phim1.jpg" alt="">
+                            <img src="image/phim1.jpg" alt="" 
+                                onclick="viewTrailer('https://www.youtube.com/embed/3bO_PcpltbY?si=FxpW3rMDHuyhTOMc')">
                         </div>
                         <div class="ten">
                             Anh không đau
@@ -51,7 +54,8 @@
                     </div>
                     <div class="phim">
                         <div class="anh">
-                            <img src="image/phim2.webp" alt="">
+                            <img src="image/phim2.webp" alt=""
+                                onclick="viewTrailer('https://www.youtube.com/embed/BF0iHuCMoog?si=xEkNjMMF2o652Ibi')">
                         </div>
                         <div class="ten">
                             Bé Ma
@@ -59,7 +63,8 @@
                     </div>
                     <div class="phim">
                         <div class="anh">
-                            <img src="image/phim3.jpg" alt="">
+                            <img src="image/phim3.jpg" alt=""
+                                onclick="viewTrailer('https://www.youtube.com/embed/pt2uOYpBD0k?si=gvQh7nH2BCaTvENX')">
                         </div>
                         <div class="ten">
                             Mặt trời mùa đông
@@ -67,7 +72,8 @@
                     </div>
                     <div class="phim">
                         <div class="anh">
-                            <img src="image/phim4.jpg" alt="">
+                            <img src="image/phim4.jpg" alt=""
+                               onclick="viewTrailer('https://www.youtube.com/embed/ep5ZBUiMMTo?si=9Rcgc5ReFbGv9gua')" >
                         </div>
                         <div class="ten">
                             Muốn gặp anh
@@ -75,7 +81,8 @@
                     </div>
                     <div class="phim">
                         <div class="anh">
-                            <img src="image/phim5.jpg" alt="">
+                            <img src="image/phim5.jpg" alt=""
+                                onclick="viewTrailer('https://www.youtube.com/embed/2BWuoNX_z-c?si=_rl52zjKs83cYZ4O')">
                         </div>
                         <div class="ten">
                             Cả Thế Giới Biết
@@ -90,7 +97,8 @@
                 <div class="danhsach">
                     <div class="phim">
                         <div class="anh">
-                            <img src="image/phim2.webp" alt="">
+                            <img src="image/phim2.webp" alt=""
+                                onclick="viewTrailer('https://www.youtube.com/embed/BF0iHuCMoog?si=xEkNjMMF2o652Ibi')">
                         </div>
                         <div class="ten">
                             Bé Ma
@@ -98,7 +106,8 @@
                     </div>
                     <div class="phim">
                         <div class="anh">
-                            <img src="image/phim4.jpg" alt="">
+                            <img src="image/phim4.jpg" alt=""
+                                onclick="viewTrailer('https://www.youtube.com/embed/BF0iHuCMoog?si=xEkNjMMF2o652Ibi')">
                         </div>
                         <div class="ten">
                             Muốn Gặp Anh
@@ -106,7 +115,8 @@
                     </div>
                     <div class="phim">
                         <div class="anh">
-                            <img src="image/phim1.jpg" alt="">
+                            <img src="image/phim1.jpg" alt=""
+                                onclick="viewTrailer('https://www.youtube.com/embed/BF0iHuCMoog?si=xEkNjMMF2o652Ibi')">
                         </div>
                         <div class="ten">
                             Anh Không Đau
@@ -114,7 +124,8 @@
                     </div>
                     <div class="phim">
                         <div class="anh">
-                            <img src="image/phim3.jpg" alt="">
+                            <img src="image/phim3.jpg" alt=""
+                                onclick="viewTrailer('https://www.youtube.com/embed/BF0iHuCMoog?si=xEkNjMMF2o652Ibi')">
                         </div>
                         <div class="ten">
                             Mặt Trời Mùa Đông
@@ -122,7 +133,8 @@
                     </div>
                     <div class="phim">
                         <div class="anh">
-                            <img src="image/phim5.jpg" alt="">
+                            <img src="image/phim5.jpg" alt=""
+                                onclick="viewTrailer('https://www.youtube.com/embed/BF0iHuCMoog?si=xEkNjMMF2o652Ibi')">
                         </div>
                         <div class="ten">
                             Cả Thế Giới Biết
@@ -328,4 +340,15 @@
     </div>
    </main>
 </body>
+<script>
+    function viewTrailer(videoUrl) {
+            // Ẩn banner
+            document.getElementById("xemVideo").style.display = "none";
+            // Cập nhật src cho iframe và hiển thị nó
+            let trailerElement = document.getElementById("trailer");
+            trailerElement.src = videoUrl;
+            trailerElement.style.display = "block"; // Hiện iframe
+        }
+
+</script>
 </html>
